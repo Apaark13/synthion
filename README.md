@@ -162,7 +162,7 @@ Opens the HTML textbook in your default browser. Omit the ID to pick from the li
 ```bash
 chapter details [run_id]
 ```
-<img width="1706" height="828" alt="image" src="https://github.com/user-attachments/assets/cb39458e-44cc-4b64-9119-ccb62d6ee302" />
+<img width="1007" height="821" alt="image" src="https://github.com/user-attachments/assets/5bf27f84-5f5f-4f48-ba2c-de21cc4f49d7" />
 
 Shows full metadata: sources processed, chapter titles, output paths, timestamps.
 
