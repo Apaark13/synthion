@@ -1,0 +1,56 @@
+# ── Python build & cache ──────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.eggs/
+dist/
+build/
+*.whl
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── MTE runtime outputs ───────────────────────────────────────────────────────
+workspace/
+workspace_v4/
+checkpoints/
+
+# ── Logs & temp ───────────────────────────────────────────────────────────────
+*.log
+nohup.out
+NOHUP.out
+*.csv
+
+# ── Test cache ────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── OS artifacts ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Large model / data files ─────────────────────────────────────────────────
+*.gguf
+*.ggml
+*.safetensors
+
+# ── AI assistant session notes ───────────────────────────────────────────────
+CLAUDE.md
+COPILOT.md
+Todo.md
+DONE.md
+
+# ── Other Items ───────────────────────────────────────────────────────────────
+docs/
+research/
