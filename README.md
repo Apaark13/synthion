@@ -2,9 +2,9 @@
 
 # Synthion
 
-**Turn any lecture into a textbook. Locally.**
+**Turn any lecture into an image and illustrations rich textbook locally for free!**
 
-YouTube playlists, videos, PDFs, audio — in. Chaptered, cited, illustrated HTML textbooks — out.  
+YouTube playlists, videos, PDFs, audio — in. Chaptered, cited, illustrated HTML textbooks, with real relevant **screenshots** and images from the videos.  
 No API keys. No cloud. Small quantized models on your own hardware.
 
 [Installation](#installation) · [Chapter CLI](#chapter-cli) · [Architecture](#how-it-works)
@@ -17,7 +17,7 @@ No API keys. No cloud. Small quantized models on your own hardware.
 
 Large language models can summarize. But summarization is not synthesis. A good textbook has structure: it sequences ideas pedagogically, grounds explanations in source material, places figures where they teach, and cites its origins.
 
-Synthion produces that. It takes a 12-video playlist and outputs a 44-chapter textbook with inline screenshots, footnote citations, and prose that reads like it was written for a student — not scraped from a transcript.
+Synthion produces that. It takes a 12-video playlist and outputs a 44-chapter textbook with inline <b>screenshots</b>, footnote citations, and prose that reads like it was written for a student, not scraped from a transcript.
 
 The key insight: **pipeline architecture replaces model scale**. Each stage of the system handles one subproblem — ingestion, planning, retrieval, writing, evaluation — with focused constraints. The result is textbook-quality output from models as small as Qwen 2B, running entirely on consumer Apple Silicon.
 
@@ -62,10 +62,12 @@ Each stage writes durable artifacts to an inspectable workspace. The evaluation 
 
 ## Output
 
-> 12 videos from Abdul Bari's Dynamic Programming playlist → **44-chapter HTML textbook** in ~35 minutes on Apple Silicon.
+> 12 videos from Abdul Bari's Dynamic Programming playlist → **44-chapter HTML textbook** on Apple Silicon.
 
 <!-- Add a screenshot of the HTML output here: -->
 <!-- ![textbook output](docs/assets/output-preview.png) -->
+Checkout example run for DP playlist by Abdul Bari
+ [Dynamic Programming introduction.pdf](https://github.com/user-attachments/files/27962006/Dynamic.Programming.introduction.pdf)
 
 ```
 workspace_v4/runs/<run_id>/
@@ -108,6 +110,8 @@ chapter info
 
 ## Chapter CLI
 
+<img width="1728" height="562" alt="image" src="https://github.com/user-attachments/assets/32aad0d3-07a7-4292-b1a4-c9c131d617d9" />
+
 `chapter` is the primary interface. It builds textbooks, manages a library of past runs, and provides an interactive terminal experience.
 
 ### Quick reference
@@ -127,6 +131,7 @@ chapter info                         System & model status
 ```bash
 chapter build <source> [--title TEXT] [--out PATH] [--open]
 ```
+<img width="1032" height="838" alt="image" src="https://github.com/user-attachments/assets/a0957f60-1b55-4de7-a2b8-3d105e68fe7c" />
 
 Build a textbook from any supported source.
 
@@ -157,6 +162,7 @@ Opens the HTML textbook in your default browser. Omit the ID to pick from the li
 ```bash
 chapter details [run_id]
 ```
+<img width="1706" height="828" alt="image" src="https://github.com/user-attachments/assets/cb39458e-44cc-4b64-9119-ccb62d6ee302" />
 
 Shows full metadata: sources processed, chapter titles, output paths, timestamps.
 
