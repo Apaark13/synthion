@@ -51,6 +51,15 @@ COPILOT.md
 Todo.md
 DONE.md
 
+# ── Legacy (pre-v4) ──────────────────────────────────────────────────────────
+agents/
+tests/test_eval.py
+tests/test_extract.py
+tests/test_fetch.py
+tests/test_orchestrator.py
+tests/test_publish.py
+tests/test_writer.py
+
 # ── Other Items ───────────────────────────────────────────────────────────────
 docs/
 research/
